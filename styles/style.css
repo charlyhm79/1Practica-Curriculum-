@@ -1,20 +1,23 @@
 body {
-    padding: 100;
-    margin: 0;
+   background-color: rgb(248, 246, 232);
+   --main-text-color: #f7f7f7;
+   --secondary-text-color: #a4a4a4;
    
    }
+
    clearfix:after {
-    content: " "; /* Older browser do not support empty content */
+    content: " "; 
     visibility: hidden;
     display: block;
     height: 0;
     clear: both;
   }
 .navbar{
+  
   position: fixed;
   top: 0;
   width:100%;
-  background-color: rgb(191, 189, 196);
+  background-color: rgb(238, 230, 215);
 }
 .navbar > .navbar__list {
     list-style-type: none;
@@ -27,12 +30,15 @@ body {
    .navbar > .navbar__list > .navbar__item {
      display: inline-block;
      font-size: 1rem;
+     
+
    }
    .navbar > .navbar__list > .navbar__item a {
     display: inline-block;
     text-decoration: none;
     padding: 20px;
     color: rgba(0, 0, 0, 0.9);
+    right: 0%;
   }
   
   .navbar > .navbar__list > .navbar__item--active a {
@@ -44,18 +50,71 @@ body {
     color: #f7f7f7;
    background-color: #a4a4a4;
   }
-  .header > .header__img{
-      position: absolute;
+  .header{
+    font-family: 'Indie Flower', cursive;
+  }
 
+  .header > .container-photo {
+    margin: 0;
+    width: 100%;
+    
+    background-color: aqua;
 
   }
-  .header__foto {
-      width: 400px;
+.container-photo > .header__img{
+      display: flex;
+      align-self:auto;
       height: 400px;
-      border-radius: 200px;
-      border: 5px solid rgb(235, 10, 10);
-      
-      
+      width: 100%;
+      top:100px;
+      border-bottom: 5px;
+      border-bottom-style: solid;
+      border-bottom-color: white;
 
+     
+  }
+  .container-photo > .header__foto{
+     position: absolute;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 5px solid rgb(253, 253, 253);
+      left:40%;
+      top: 300px;
+  }
+
+  .header >.header__title{
+     margin :10%;
+  }
+  header__right_title + header__img {
+   
+    margin-left: 80%;
+    
 
   }
+
+  .containeraboutMe > .containeraboutMe__video{
+  float: left;
+  margin-left: 5%;
+  max-width: 50%;
+
+  }
+  .containeraboutMe > .containeraboutMe__contain2{
+    font-family: 'Indie Flower', cursive;
+    display: inline;
+  
+    float: right;
+    max-width: 50%;
+  
+    }
+  
+  
+
+  .footer {
+    background-color: rgba(0, 0, 0, 0.92);
+    color: var(--main-text-color);
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  
