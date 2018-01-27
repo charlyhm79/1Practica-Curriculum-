@@ -17,19 +17,19 @@
         <nav class="navbar">
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <a href="#whoAmI">Quien soy</a>
+                    <a href="#whoAmI">Who is it </a>
                 </li>
 
                 <li class="navbar__item">
-                    <a href="#studies">Estudios</a>
+                    <a href="#studies">Academic Background</a>
                 </li>
 
                 <li class="navbar__item">
-                    <a href="#experience">Experiencia</a>
+                    <a href="#experience">Professional Experience</a>
                 </li>
 
                 <li class="navbar__item">
-                    <a href="#aboutMe">Sobre mi</a>
+                    <a href="#aboutMe">About me</a>
                 </li>
 
                 <li class="navbar__item">
@@ -43,17 +43,27 @@
 
             <figure class="container-photo">
                  <img class="header__img" src="./images/desk.jpg" alt="deskPicture">
-        
-                 <img class="header__foto" src="./images/Carlos.jpg" alt="Foto De Carlos">
             </figure>
-        <div class="header__datos">
-             <hgroup class="header__title">
-                 <h1 class="header__title1">CURRICULUM</h1>
-                 <h2 class="header__title2">Carlos González Palacios</h2>
-             </hgroup>
+
+            <figure class="container-image">    
+                <img class="header__foto" src="./images/Carlos.jpg" alt="Foto De Carlos">
+                
+             </figure>     
         
+       
 
         
+        <div class="header__datos">
+             <hgroup class="header__title">
+                 <h2 class="header__title1">CURRICULUM</h2>
+                 <h2 class="header__title2">Carlos González Palacios</h2>
+             </hgroup>
+
+             <hgroup class="header__middle_title">
+                 <h1 class="foto__title3">Web and Movile full stack developer</h1>
+                </hgroup>
+
+            
         <hgroup class="header__right_title">
             <h3 class="header__title4">Age : 38</h3>
             <h3 lass="header__title5">Address: Madrid</h3>
@@ -62,59 +72,104 @@
         </hgroup>    
       </div>
          <hgroup class="header__middle_title">
-            <h3 class="header__title3">Web and Movile full stack developer</h3>
+           
          </hgroup>
 
     </header>
    
-    <div class="Container">
+    <section class="Container">
         <article class="ContainersqSoy__article">
-            <h4 class="ContainersqSoy__title" id="whoAmI">Quien soy</h4>
+            <h3 class="ContainersqSoy__title" id="whoAmI">Who is it ??</h3>
             <p class="ContainersqSoy__contain">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dicta quos eligendi culpa voluptas, blanditiis, veritatis deserunt, possimus quis facere corrupti soluta rerum molestias nobis. Velit quibusdam dicta voluptas id?
             </p>
         </div>
-    </div>
-    <div class="Container">
+    </section>
+    <section class="Container">
         <div class="Containstudies">
-                <h4 class="Containstudies__title" id="studies">Academic Background</h4>
+                <h3 class="Containstudies__title" id="studies">Academic Background</h3>
             <p class="Containstudies__contain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit labore dolor incidunt molestias sapiente. Rem quos blanditiis neque delectus excepturi, dolores, minima tenetur facere odio libero, dolorum saepe? Eligendi, nisi.</p>
             
         </div>
-    </div>
+    </section>
     <div class="Container">
         <div class="Containexperience">
-                <h4 class="Containexperience__title " id="experience">Experiencia</h4>
+                <h3 class="Containexperience__title " id="experience">Professional Experience</h3>
             <p class="Containexperience__contain">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iusto nam reiciendis, quis magni fugiat nisi sed, asperiores autem dolores at, sapiente optio est libero incidunt corporis nulla nihil delectus.
             </p>
         </div>
     </div>
-    <div class="Container">
+    <section class="Container">
             
         <div class="containeraboutMe">
-                <h4 class="containeraboutMe__title" id="aboutMe">Sobre mi</h4>
+                <h3 class="containeraboutMe__title" id="aboutMe">About Me</h3>
 
             <div class="containeraboutMe__contenedor">
                 
                 <iframe class="containeraboutMe__video" width="560" height="315" src="https://www.youtube.com/embed/GuLcxg5VGuo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
            <div class="containeraboutMe__cita">
-            <p class="containeraboutMe__contain1">"All my life I have dared to go past what is possible.</p>
-             <p class="containeraboutMe__contain2"> the place where the possible and the impossible meet,</p> 
-             <p class="containeraboutMe__contain3"></p>to become... the possimpible."</p>
+            <cite class="containeraboutMe__contain1">"All my life I have dared to go past what is possible.<br> the place where the possible and the impossible meet,<br>to become... the possimpible."</cite>
+            
             </div>
             </div>
+            
         </div>
-    </div>
-    <div class="Container">
+    </section>
+    <section class="Container">
         <div class="containercontacto">
-                <h4 class="containercontacto__title" id="contacto">Contacto</h4>
-            <p class="containercontacto__contain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus modi dolorem corporis obcaecati eos, esse similique totam dolorum est minus alias repellendus non sed illum repudiandae consequuntur et eligendi.</p>
-        </div>
-    </div>
+                <h3 class="containercontacto__title" id="contacto">Contacto</h3>
+            
+                <div class="row">
+                    
+                        <div class="col-6">
+                            <div class="form">
+                                <form name="contacto" method="get" novalidate>
+                                    <div class="form-row">
+                                            <label for="nombre">Nombre y apellidos</label>
+                                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        
+                                        <input type="text" name="apellidos" id="apellido1" placeholder="Primer apellido" required>
+                                        <input type="text" name="apellidos" id="apellido2" placeholder="Segundo apellido" required>
+                                    </div>
+                                    <div class="form-row">
+                                            <label for="email">E-Mail</label>
+                                        <input type="text" id="email" name="email" placeholder="name@company.com">
+                                    </div>
+
+                                    <span>Como me has conocido</span>
+                                    <div class="form-row">
+                                        
+                                        <label for="form_Opt1">Internet</label>
+                                        <input type="radio" id="form_Opt1" name="form_Opt" value="Internet" required>
+        
+                                        <label for="form_Opt2">Referencias de Terceros</label>
+                                        <input type="radio" id="form_Opt2" name="form_Opt" value="Referencias de Terceros" required>
+        
+                                        <label for="form_Opt3">Otro</label>
+                                        <input type="radio" id="form_Opt3" name="form_Opt" value="Otro" required>
+                                    </div>
+                                    <div class="form-row">
+                                    
+                                        <label for="Teléfono">Teléfono de contacto</label>
+                                        <input type="text" id="telefono" placeholder="teléfono" required>
+                                    </div>
+                                   
+                                    <div class="form-row">
+                                        <button type="submit" id="enviar">Enviar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+        
+
+
+    </section>
 
      <footer class="footer">
-         Carlos González &copy;2018
+         Carlos González &copy; 2018
 
     </footer>
     
