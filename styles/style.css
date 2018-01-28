@@ -14,14 +14,17 @@ body {
     height: 0;
     clear: both;
   }
+
+
 .navbar{
-  
+
   position: fixed;
   top: 0;
   width:100%;
   background-color: rgb(238, 230, 215);
 }
 .navbar > .navbar__list {
+ 
     list-style-type: none;
      margin: 0;
      width: 100%;
@@ -30,8 +33,10 @@ body {
    }
    
    .navbar > .navbar__list > .navbar__item {
+     float: right;
      display: inline-block;
      font-size: 1rem;
+     margin-right: 5%;
      
 
    }
@@ -43,28 +48,36 @@ body {
     right: 0%;
   }
   
-  .navbar > .navbar__list > .navbar__item--active a {
-    color: #f7f7f7;
-    background-color: rgba(255,255,255,0);
-  }
+ 
   
   .navbar > .navbar__list > .navbar__item a:hover {
-    color: #f7f7f7;
-   background-color: #a4a4a4;
+   color: #f7f7f7;
+   background-color:  rgb(165, 140, 94);
+   font-size: 1.5rem;
+   border-radius: 5%;
   }
   .header{
-    font-family: 'Indie Flower', cursive;
+   
+    background-size: cover;
+    background-position: center center;
+    margin: 0%;
+    height: 100vh;
+   
+    
+    
   }
 
   .header > .container-photo {
     display: flex;
-    margin: 0;
-    width: 100%;
+    margin: 0%;
+    
     
 
 
   }
 .container-photo > .header__img{
+  
+
    
       height: 400px;
       width: 100%;
@@ -75,7 +88,12 @@ body {
 
      
   }
-  
+  .header >.container-image{
+    position: relative;
+     left: 40%;
+      top: -100px;
+      overflow: hidden;
+   }
 
   .header__datos{
     display: flex;
@@ -86,13 +104,7 @@ body {
 
 
   }
-  .header >.container-image{
-   position: relative;
-    font-size: 30px;
-    left: 40%;
-     top: -100px;
-     overflow: hidden;
-  }
+  
   .container-image > .header__foto{
     
      width: 200px;

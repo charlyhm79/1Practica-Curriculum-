@@ -122,7 +122,6 @@
             
                 <div class="row">
                     
-                        <div class="col-6">
                             <div class="form">
                                 <form name="contacto" method="get" novalidate>
                                     <div class="form-row">
@@ -134,7 +133,7 @@
                                     </div>
                                     <div class="form-row">
                                             <label for="email">E-Mail</label>
-                                        <input type="text" id="email" name="email" placeholder="name@company.com">
+                                        <input type="text" id="email" name="email" placeholder="name@company.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required >
                                     </div>
 
                                     <span>Como me has conocido</span>
@@ -152,19 +151,15 @@
                                     <div class="form-row">
                                     
                                         <label for="Teléfono">Teléfono de contacto</label>
-                                        <input type="text" id="telefono" placeholder="teléfono" required>
+                                        <input type="text" pattern="[0-9]" id="telefono" placeholder="teléfono" required>
                                     </div>
                                    
                                     <div class="form-row">
                                         <button type="submit" id="enviar">Enviar</button>
                                     </div>
                                 </form>
-                            </div>
+                            </div>  
                         </div>
-                    </div>
-
-        
-
 
     </section>
 
