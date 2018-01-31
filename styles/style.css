@@ -34,7 +34,6 @@ body {
    
    .navbar > .navbar__list > .navbar__item {
      float: right;
-     display: inline-block;
      font-size: 1rem;
      margin-right: 5%;
      
@@ -109,45 +108,28 @@ body {
      
  
   .Container{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5%;
-    
-  }
-
-  
-
-  .Container >.ContainersqSoy{
-
    
-  
+   text-align: center;
 
-
-
+    
   }
-  .Containstudies__contain {
+
+    
+  
+  .Containstudies>.Containstudies__contain {
     display: flex;
-    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: space-around;
     
-        
+    margin: 2%;
     
-
   }
-  .Containstudies__contain >.contain_list_item{
-  
-    
-    
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    
-    
-   
-    
-
+  .Containstudies__contain>.contain_list_item{
+    list-style-type: none;
   }
+ 
   .contain_list_item > img{
-
+    
     max-width: 100%;
     max-height: 200px;
 
@@ -161,34 +143,36 @@ body {
 
   .containeraboutMe >.containeraboutMe__contenedor{
     display: flex;
+    flex-direction: row;
     
-    
-
   }
 
   
   .containeraboutMe__contenedor > .containeraboutMe__cita {
-    display: flex;
-    font-size: 20px;
-    margin: 2%;
     
-
-   
+    
     }
+
+
     .Containercontacto{
       display: flex;
 
     }
     .form{
-      margin: 2rem;
+      margin: 0 20% 5% 20% ;
       padding: 1.2rem;
+      border: 0.1rem solid wheat;
+      color: #f7f7f7;
+      background-color: rgb(238, 230, 215);
+      border-radius: 5%;
+
 
     }
 
-    .form.form-row{
-      margin-top: 2rem;
+   button , .form-row {
+      margin: 5px 0 30px 0 ;
 
-      padding: 0.8;
+      
 
     }
     input{
