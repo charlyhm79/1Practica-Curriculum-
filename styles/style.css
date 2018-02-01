@@ -61,6 +61,7 @@ body {
     background-position: center center;
     margin: 0%;
     height: 100vh;
+    margin-bottom: 10px;
     
   }
 
@@ -108,19 +109,40 @@ body {
      
  
   .Container{
-   
+  
    text-align: center;
 
-    
+   
+  }
+  .ContainersqSoy{
+    display: inline-block;
   }
 
+  
+  
+  .qSoycontainer-image{
+    
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    
+  }
+  .qSoycontainer-image1 >.qSoy__foto1{
+    width: 200px;
+    height: 200px;
+
+  }
+ .qSoycontainer-image2 >.qSoy__foto2{
+  width: 200px;
+  height: 200px;
+    
+  }
     
   
   .Containstudies>.Containstudies__contain {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
     margin: 2%;
     
   }
@@ -144,14 +166,25 @@ body {
   .containeraboutMe >.containeraboutMe__contenedor{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     
   }
 
   
+  
   .containeraboutMe__contenedor > .containeraboutMe__cita {
     
+    margin:2%;
     
     }
+    .containeraboutMe__contenedor > .containeraboutMe__video {
+    
+      border-radius: 5%;
+      border: 0.1rem solid wheat;
+      
+      }
+    
 
 
     .Containercontacto{
@@ -159,7 +192,7 @@ body {
 
     }
     .form{
-      margin: 0 20% 5% 20% ;
+      margin: 0 30% 5% 30% ;
       padding: 1.2rem;
       border: 0.1rem solid wheat;
       color: #f7f7f7;
@@ -168,9 +201,11 @@ body {
 
 
     }
+    
 
    button , .form-row {
-      margin: 5px 0 30px 0 ;
+      margin: 5px 2% 30px 2% ;
+      
 
       
 
