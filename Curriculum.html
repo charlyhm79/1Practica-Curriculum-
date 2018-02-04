@@ -186,9 +186,9 @@
                                     </div>
                                     <div class="form-row">
                                             
-                                            <input type="text" id="email" name="email" placeholder="e-mail" >
+                                            <input type="text" id="email" name="email" placeholder="e-mail"required>
                                            
-                                            <input type="text" id="telefono" name="telefono" placeholder="Ej:984 489 293">
+                                            <input type="text" id="telefono" name="telefono" placeholder="Ej:984 489 293" required>
                                     </div>
 
                                     <span>Como me has conocido</span>
@@ -204,7 +204,10 @@
                                         <input type="radio" id="form_Opt3" name="form_Opt" value="Otro" required>
 
                                         
-                                        <textarea rows="3" cols="30" id="como" placeholder="Indica como me has conocido" required></textarea>
+                                        <textarea rows="3" cols="30" id="como" oninvalid="invalidComment(this);" onblur="setbg('white')" placeholder="Indica como me has conocido" onfocus="this.value=''; setbg('#e5fff3');"   maxlength="150"  required></textarea>
+                                         
+                                         
+           
                                     </div>
                                  
                                     
@@ -221,12 +224,12 @@
 
     
                         
-    
-    <footer class="footer">              
+                        <footer class="footer">              
          
-        Carlos González &copy; 2018
-
-   </footer> 
+                            Carlos González &copy; 2018
+                    
+                       </footer>     
+    
    <script src="./scripts/menu.js"></script>
     <script src="./scripts/form.js"></script>
 </body>

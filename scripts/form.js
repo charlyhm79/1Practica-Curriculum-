@@ -54,14 +54,12 @@ if (mailValidation === false ){
     return false;
 
 }
-   var regexTelefono =/(+[0-9]{2})0-9]{9}/;
-   var phoneValid = regexTelefono.test(telefonoinput.value);
-
-if (phoneValid === false ){
-    alert("tienes que escribir un numero de teléfono válido");
+if (telefonoinput.checkValidity() === false) {
+    alert("Escribe un numero de telefono valido");
     telefonoinput.focus();
-    event.preventDefault;
+    event.preventDefault();
     return false;
+
 
 }
 
@@ -72,11 +70,11 @@ if (comoMeconocisteinput.internet.checkValidity() === false ){
 
 }
 
-if (otro.checkValidity() === true ){
+});
+
+if (document.otro.checkValidity() === true ){
     alert('Tienes que completar el siguiente campo');
     comoInput.focus();
     event.preventDefault;
     return false;
 }
-
-});
