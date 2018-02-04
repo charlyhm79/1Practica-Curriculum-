@@ -37,6 +37,7 @@ body {
      font-size: 1rem;
      margin-right: 5%;
      
+     
 
    }
    .navbar > .navbar__list > .navbar__item a {
@@ -110,17 +111,30 @@ body {
  
   .Container{
   
-   text-align: center;
+  margin: 10% 10% 10% 10%;
 
    
   }
+
+  .Container >.title{
+    border: 0.1rem solid wheat;
+  }
+
   .ContainersqSoy{
-    display: inline-block;
+   
+    overflow: hidden;
+    width: 500px;
+
+  }
+  .ContainersqSoy > .ContainersqSoy__contain{
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
   }
 
   
   
-  .qSoycontainer-image{
+  .ContainersqSoy >.qSoycontainer-image{
     
     float: right;
     margin-left: 1em;
@@ -208,7 +222,6 @@ body {
       
 
       
-
     }
     input{
       padding:0.5rem;
@@ -226,11 +239,13 @@ body {
   
 
   .footer {
+    width: 100%;
     display: flex;
     background-color: rgba(0, 0, 0, 0.92);
     color: var(--main-text-color);
     height: 50px;
     align-items: center;
     justify-content: center;
+    bottom: 0;  
   }
   

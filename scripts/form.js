@@ -4,8 +4,8 @@
 var form = document.getElementsByName("contacto")[0];
 
 var nombreInput = document.getElementById("nombre");
-var apellidoUnoInput=document.getElementById("Apellido1");
-var apellidoDosInput=document.getElementById("Apellido2");
+var apellidoUnoInput=document.getElementById("apellido1");
+var apellidoDosInput=document.getElementById("apellido2");
 
 var emailinput = document.getElementById("email");
 var telefonoinput = document.getElementById("telefono");
@@ -13,6 +13,7 @@ var telefonoinput = document.getElementById("telefono");
 
 var submitButton = document.getElementById("enviar");
 var indicaComoInput = document.getElementById("como");
+var comoInput = document.getElementById("como");
 
 var comoMeconocisteinput = {
     internet: document.getElementById("form_Opt1"),
@@ -33,6 +34,48 @@ var comoMeconocisteinput = {
     alert("Escribe tu Apellido");
     apellidoUnoInput.focus();
     event.preventDefault();
+    return false;
+}
+if (apellidoDosInput.checkValidity() === false) {
+    alert("Escribe tu  segundo Apellido");
+    apellidoDosInput.focus();
+    event.preventDefault();
+    return false;
+}
+
+
+    var regex =/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/;
+    var mailValidation = regex.test(emailinput.value);
+
+if (mailValidation === false ){
+    alert("tienes que escribir un email válido");
+    emailinput.focus();
+    event.preventDefault;
+    return false;
+
+}
+   var regexTelefono =/(+[0-9]{2})0-9]{9}/;
+   var phoneValid = regexTelefono.test(telefonoinput.value);
+
+if (phoneValid === false ){
+    alert("tienes que escribir un numero de teléfono válido");
+    telefonoinput.focus();
+    event.preventDefault;
+    return false;
+
+}
+
+if (comoMeconocisteinput.internet.checkValidity() === false ){
+    alert("tienes que elegir una opcion");
+    event.preventDefault;
+    return false;
+
+}
+
+if (otro.checkValidity() === true ){
+    alert('Tienes que completar el siguiente campo');
+    comoInput.focus();
+    event.preventDefault;
     return false;
 }
 
