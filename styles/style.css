@@ -57,9 +57,8 @@ body {
    border-radius: 5%;
   }
   .header{
-   
-    background-size: cover;
-    background-position: center center;
+    background-image: url(./images/backgroundWood.jpg);
+    
     margin: 0%;
     height: 100vh;
     margin-bottom: 10px;
