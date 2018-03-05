@@ -51,7 +51,7 @@ function ScrollToElement(element){
     document.documentElement.scrollTop += jump;
 
 
-   if (!element.lastJump || element.lastJump > MAth.abs(jump)){
+   if (!element.lastJump || element.lastJump > Math.abs(jump)){
     element.lastJump = Math.abs(jump);
     setTimeout(function() {
 
@@ -64,4 +64,55 @@ function ScrollToElement(element){
 
    }
    
+}
+
+var acumulativeOffset = function(element){
+    var top = 0;
+
+    do{
+        top += element.offsetTop || 0;
+        element = element.offsetParent;
+
+    } while(element);
+
+  
+
+    return top -50;
+
+;}
+var WhoIsItOffset = acumulativeOffset(document.getElementById("whoAmI"));
+var StudiesOffset = acumulativeOffset(document.getElementById("studies"));
+var experienceOffset = acumulativeOffset(document.getElementById("experience"));
+var aboutmeOffset = acumulativeOffset(document.getElementById("aboutMe"));
+var contactoOffset = acumulativeOffset(document.getElementById("contacto"));
+
+
+window.addEventListener('scroll', changeMenuStyle);
+
+function changeMenuStyle(event) {
+
+    var pageOffset = window.pageYOffset;
+
+    if(pageOffset >= 0 && pageYOffset < WhoIsItOffset) {
+        deleteActiveClass();
+        document.querySelector("a[href='#']").parentNode.classList.add("navbar__item--active");
+
+    } else if (pageOffset >= WhoIsItOffset  && pageOffset < StudiesOffset){
+        deleteActiveClass();
+        document.querySelector("a[href$='whoAmI']").parentNode.classList.add("navbar__item--active");
+
+    } else if (pageOffset >=StudiesOffset && pageOffset < experienceOffset ){
+        deleteActiveClass();
+        document.querySelector("a[href$='studies']").parentNode.classList.add("navbar__item--active");
+
+    } else if ( pageOffset >=experienceOffset && pageOffset < aboutmeOffset ){
+        deleteActiveClass();
+        document.querySelector("a[href$='experience']").parentNode.classList.add("navbar__item--active");
+
+    } else if( pageOffset >=aboutmeOffset && pageOffset < contactoOffset ){
+        deleteActiveClass();
+        document.querySelector("a[href$='aboutMe']").parentNode.classList.add("navbar__item--active");
+
+    }
+
 }
