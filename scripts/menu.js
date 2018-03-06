@@ -89,29 +89,73 @@ var contactoOffset = acumulativeOffset(document.getElementById("contacto"));
 
 window.addEventListener('scroll', changeMenuStyle);
 
+var previous;
+
 function changeMenuStyle(event) {
+
+    
 
     var pageOffset = window.pageYOffset;
 
     if(pageOffset >= 0 && pageYOffset < WhoIsItOffset) {
+        if(!previous || previous !== 1){
+            previous = 1;
+        } else {
+            return false;
+        }
+        
         deleteActiveClass();
         document.querySelector("a[href='#']").parentNode.classList.add("navbar__item--active");
 
     } else if (pageOffset >= WhoIsItOffset  && pageOffset < StudiesOffset){
+        if(!previous || previous !== 1){
+            previous = 2;
+        } else {
+            return false;
+        }
+        
         deleteActiveClass();
         document.querySelector("a[href$='whoAmI']").parentNode.classList.add("navbar__item--active");
 
     } else if (pageOffset >=StudiesOffset && pageOffset < experienceOffset ){
+        if(!previous || previous !== 1){
+            previous = 3;
+        } else {
+            return false;
+        }
+       
         deleteActiveClass();
         document.querySelector("a[href$='studies']").parentNode.classList.add("navbar__item--active");
 
     } else if ( pageOffset >=experienceOffset && pageOffset < aboutmeOffset ){
+        if(!previous || previous !== 1){
+            previous = 4;
+        } else {
+            return false;
+        }
+        
         deleteActiveClass();
         document.querySelector("a[href$='experience']").parentNode.classList.add("navbar__item--active");
 
     } else if( pageOffset >=aboutmeOffset && pageOffset < contactoOffset ){
+        if(!previous || previous !== 1){
+            previous = 5;
+        } else {
+            return false;
+        }
+       
         deleteActiveClass();
         document.querySelector("a[href$='aboutMe']").parentNode.classList.add("navbar__item--active");
+
+    }else if( pageOffset >=contactoOffset && pageOffset  ){
+        if(!previous || previous !== 1){
+            previous = 6;
+        } else {
+            return false;
+        }
+        
+        deleteActiveClass();
+        document.querySelector("a[href$='contacto']").parentNode.classList.add("navbar__item--active");
 
     }
 

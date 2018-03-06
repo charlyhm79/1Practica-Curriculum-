@@ -22,7 +22,7 @@ body {
   top: 0;
   width:100%;
   background-color: rgb(238, 230, 215);
-  height: 50px;
+  height: 70px;
 }
 .navbar > .navbar__list {
  
@@ -48,10 +48,12 @@ body {
     color: rgba(0, 0, 0, 0.9);
     right: 0%;
   }
-  .navbar > .navbar__list > .navbar__item--active a {
+  .navbar > .navbar__list > .navbar__item--active  {
     color: #f7f7f7;
     background-color:  rgb(165, 140, 94);
-    height: 50px;
+    height: 50;
+
+    
   }
  
   
@@ -60,15 +62,17 @@ body {
    background-color:  rgb(165, 140, 94);
    font-size: 1.5rem;
    border-radius: 5%;
-   height: 50px;
+   height: 50;
+   
    
   }
   .header{
-    background-image: url(./images/backgroundWood.jpg);
+    
     
     margin: 0%;
     height: 100vh;
     margin-bottom: 10px;
+    height: 50;
     
   }
 
