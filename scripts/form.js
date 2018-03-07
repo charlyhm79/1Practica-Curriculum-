@@ -70,7 +70,6 @@ if (comoMeconocisteinput.internet.checkValidity() === false ){
 
 }
 
-});
 
 if (document.otro.checkValidity() === true ){
     alert('Tienes que completar el siguiente campo');
@@ -78,3 +77,12 @@ if (document.otro.checkValidity() === true ){
     event.preventDefault;
     return false;
 }
+submitButton.setAttribute("disabled", "");
+event.preventDefault();
+
+setTimeout(function() {
+  form.reset();
+  sendNotification("Formulario recibido", "Gracias por participar");
+  submitButton.removeAttribute("disabled");
+}, 1000);
+});

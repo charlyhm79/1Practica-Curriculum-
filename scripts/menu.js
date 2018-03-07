@@ -46,7 +46,7 @@ function scrollToElement(id){
 
 function ScrollToElement(element){
 
-    var jump = (element.getBoundingClientRect().top * 0.3);
+    var jump = (element.getBoundingClientRect().top * 0.4);
     document.body.scrollTop += jump;
     document.documentElement.scrollTop += jump;
 
@@ -57,7 +57,7 @@ function ScrollToElement(element){
 
         scrollToElement(element);
 
-    },25);
+    },35);
 
    } else {
        element.lastJump = null;
@@ -77,7 +77,7 @@ var acumulativeOffset = function(element){
 
   
 
-    return top -50;
+    return top -40;
 
 ;}
 var WhoIsItOffset = acumulativeOffset(document.getElementById("whoAmI"));
@@ -160,3 +160,7 @@ function changeMenuStyle(event) {
     }
 
 }
+
+
+
+ 
